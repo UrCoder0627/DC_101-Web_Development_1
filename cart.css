@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+}
+header{
+  background-color: #bcb8b6;
+  padding: 5px 5px;
+}
+body{
+    background-color: #f2eee9;
+}
+header h2 {
+  margin: 0 10px;
+  font-size: 18px;
+}
+.logo{
+  margin: 5px 10px;
+  width: 70px;
+}
+.cart{
+    overflow-x: auto;
+    margin: 10px 10px;
+}
+.cart table{
+    width: 100;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.cart table img{
+    width: 70px;
+}
+.cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+.cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+.cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+.cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    text-align: center;
+}
+.cart table thead{
+    border: 1px solid #333;
+    border-left:none;
+    border-right: none;
+}
+.cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px 0;
+}
+.cart table tbody tr td{
+    padding-top: 15px;
+}
+.cart table tbody td{
+    font-size: 13px;
+}
+.order{
+    display: flex;
+    justify-content: flex-start;
+
+}
+#payment{
+    padding: 10px 20px;
+    border: 1px solid #333;
+    width: 400px;
+    background-color:#f7e8e4;
+    margin: 10px 10px;
+}
+#payment table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#payment table td{
+    width: 50%;
+    border: 1px solid #555;
+    padding: 5px;
+    font-size: 15px;
+}
+#payment h3{
+    padding: 10px;
+}
+.orderbtn{
+    background-color:rgb(244, 181, 181);
+    color: #f2eee9;
+    padding: 12px 20px;
+    border: none;
+}
+.orderbtn:hover{
+    color: black;
+    background-color: transparent;
+    border: 1px solid #333;
+    transition: .2s;
+    font-weight: bold;
+}
+thead{
+    background: #555;
+}

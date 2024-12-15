@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+    <title>Mikana</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <form action="loginActionPage.php" method="POST" class="input"> 
+            <h2>Log In</h2>
+            <input class="userInput" type="email" placeholder="Example@gmail.com" required name="email">
+            <input class="userInput" type="password" placeholder="Password" required name="password">
+            <button type="submit" class="button">Log In</button>
+            <a href="register.html" class="create-link">Don't have an account? <span>Sign Up here!</span></a>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('loginForm');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(event) {
+            if (password.value !== confirmPassword.value) {
+                event.preventDefault();
+                errorMessage.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
